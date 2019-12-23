@@ -1,16 +1,17 @@
 import React from 'react';
 import cl from './Post.module.css'
 
-const Post = () => {
+const Post = (props) => {
+    const countLike =  `like ${props.count}`;
     return (
         <div>
             <div className={cl.item}>
                 <img src='https://whatsism.com/uploads/posts/2018-07/1530546770_rmk_vdjbx10.jpg' />
-                post 1
+                props.message
             </div>
             <div >
                 <span>
-                    like
+                    {countLike}
                 </span>
             </div>
         </div>

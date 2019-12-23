@@ -1,7 +1,6 @@
 import React from 'react';
 import cl from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
-import Post from "./MyPosts/Post/Post";
 
 const Profile = () => {
     return(
@@ -17,6 +16,6 @@ const Profile = () => {
             <MyPosts/>
         </div>
     )
-}
+};
 
 export default Profile

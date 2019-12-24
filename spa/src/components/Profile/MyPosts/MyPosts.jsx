@@ -2,20 +2,19 @@ import React from 'react';
 import Post from './Post/Post'
 import cl from './MyPosts.module.css'
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+    let postsElement = props.posts.map(post => <Post message={post.message} id={post.id} count={post.count}/>);
     return (
-        <div>
-            <textarea></textarea>
-            <button>Add post</button>
+        <div className={cl.myPostBlock}>
+            <h3 className={cl.h3}>My posts</h3>
+                <div >
+                    <textarea className={cl.newPost}></textarea>
+                </div>
+                <div>
+                    <button className={cl.button}>Add post</button>
+                </div>
             <div className={cl.posts}>
-                <Post
-                    message='Hello? how are you?'
-                    count={10}
-                />
-                <Post
-                    message='I am fine and you'
-                    count={20}
-                />
+                {postsElement}
             </div>
 
         </div>

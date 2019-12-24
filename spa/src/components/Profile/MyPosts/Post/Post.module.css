@@ -1,8 +1,22 @@
 
 .item {
-    color: red;
+    color: #262B4D;
+    border: 1px solid steelblue;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px;
 }
+
 .item img {
     width: 30px;
     border-radius: 20px;
+}
+
+.countLike {
+    font-size: 11px;
+    color: #262b4d;
+}
+
+.post {
+    margin: 10px 0px;
 }

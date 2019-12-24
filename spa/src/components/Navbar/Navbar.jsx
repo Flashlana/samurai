@@ -1,6 +1,7 @@
 import React from 'react';
 import cl from './Navbar.module.css'
 import {NavLink} from "react-router-dom";
+import Image from "./Image/Image";
 
 const Navbar = () => {
     return <nav className={cl.nav}>
@@ -18,6 +19,14 @@ const Navbar = () => {
         </div>
         <div className={cl.item}>
             <NavLink to='/settings' activeClassName={cl.activeLink}>Settings</NavLink>
+        </div>
+        <div className={cl.itemFriends}>
+            <NavLink to='/settings' activeClassName={cl.activeLink}>Friends</NavLink>
+            <div>
+                <Image/>
+                <Image/>
+                <Image/>
+            </div>
         </div>
     </nav>
 };

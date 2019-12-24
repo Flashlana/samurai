@@ -6,11 +6,16 @@
     border-radius: 8px;*/
 }
 
-.item a {
+.item a, .itemFriends a {
     color: steelblue;
     text-decoration: none;
 }
 
 .item a.activeLink {
     color: darkblue;
+}
+
+.itemFriends {
+    margin-top: 40px;
+    font-size: 18px;
 }

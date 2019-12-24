@@ -16,12 +16,9 @@
     color: black;
 }*/
 
-/*.dialogsItems active {
+.dialogsItems .active {
     background-color: rgba(61, 114, 156, 0.48);
-    border-radius: 8px;
-    margin-bottom: 4px;
-    text-align: center;
-}*/
+}
 
 .dialog {
     background-color: #D2D7D3;
@@ -36,10 +33,10 @@
     color: black;
 }
 
-.dialog a.activeDialog {
+/*.dialog a.activeDialog {
     text-decoration: none;
     color: black;
-}
+}*/
 
 .messages {
     padding: 10px;

@@ -1,3 +1,25 @@
-.item {
-    color: black;
+.posts {
+    padding: 10px;
+}
+
+.newPost {
+    border: 1px solid steelblue;
+    box-shadow: 4px 4px 2px 0px rgba(19, 127, 156, 0.2);
+    width: 80%;
+    min-height: 80px;
+    border-radius: 3px;
+}
+
+.h3 {
+    color: #3e5781;
+}
+
+.button {
+    color: #283452;
+    background-color: rgba(62, 77, 110, 0.4);
+    border-radius: 3px;
+}
+
+.myPostBlock {
+    padding: 10px;
 }

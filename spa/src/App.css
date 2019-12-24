@@ -1,7 +1,8 @@
 .app-wrapper {
-  margin: 0 auto;
+  margin: 10px;
   display: grid;
   width: 1200px;
+  height: 100vh;
   grid-template-areas:
   "h h"
   "n c";
@@ -14,4 +15,5 @@
 .app-wrapper-content {
   grid-area: c;
   background-color: #D2D7D3;
+  font-family: "Times New Roman";
 }

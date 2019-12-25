@@ -7,9 +7,9 @@ const state = {
     },
     message: {
         dialogs: [
-            {id: 1, name: 'Боголепицкий Аркадий Иванович второй третий четвертый египетский '},
-            {id: 2, name: 'Elena'},
-            {id: 3, name: 'Anna'},
+            {id: 1, name: 'Аркадий Иванович Курочкин'},
+            {id: 2, name: 'Elena', photo: 'https://naydisebya.ru/wp-content/uploads/portret1-7.jpg'},
+            {id: 3, name: 'Anna', photo: 'https://naydisebya.ru/wp-content/uploads/portret1-9.jpg'},
         ],
         messages: [
             {id: 1, message: 'Hi'},

@@ -1,6 +1,6 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 30% 70%;
     background-color: white;
     border-radius: 8px;
     margin-right: 7px;
@@ -36,15 +36,15 @@
 }*/
 
 .dialogsItems {
+    border: 3px solid #D2D7D3;
     margin-right: 10px;
+    border-radius: 8px;
 }
 
 .messages {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-   /* display: block;*/
-    /*  text-align: justify;*/
 }
 
 .messageI {
@@ -52,16 +52,6 @@
     background-color: #D2D7D3;
     border-radius: 8px;
     padding: 4px
-   /* display: inline-block;
-    justify-content: flex-start;
-    background-color: #D2D7D3;
-    border-radius: 8px;
-    padding: 4px;*/
-    /*text-align: left;
-    background-color: #D2D7D3;
-    border-radius: 8px;
-    padding: 3px;
-    display: block;*/
 }
 
 .messageOther {
@@ -69,20 +59,9 @@
     border: 1px solid #a1a6a2;
     border-radius: 8px;
     padding: 4px;
-   /* display: inline-block;
-    justify-content: flex-start;
-    border: 1px solid #a1a6a2;
-    border-radius: 8px;
-    padding: 4px;*/
-    /*text-align: right;
-    border: 1px solid #a1a6a2;
-    border-radius: 8px;
-    padding: 4px;
-    display: block;*/
-    /*right: 0 !important;*/
-    /*text-align: right;
-    border: 1px solid #a1a6a2;
-    border-radius: 8px;
-    padding: 4px;
-    width: auto;*/
+}
+
+.dialog .name {
+    padding-top: 10px;
+    display: block;
 }

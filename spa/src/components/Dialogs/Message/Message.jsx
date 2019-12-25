@@ -9,11 +9,7 @@ const Message = (props) => {
         }
         return cl.messageOther
     };
-    return (
-        <div>
-            <div className={getMessageStyle()}>{props.message}</div>
-        </div>
-    )
+    return <div className={getMessageStyle()}>{props.message}</div>
 };
 
 export default Message;

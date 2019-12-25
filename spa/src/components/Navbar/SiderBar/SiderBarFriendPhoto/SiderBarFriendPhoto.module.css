@@ -1,0 +1,15 @@
+.imgFriend {
+    width: 25px;
+    height: 25px;
+    border-radius: 14px;
+    margin: 3px;
+}
+
+.photoAndNameFriend {
+    float: left;
+    margin-right: 2px;
+}
+
+.name {
+    font-size: 11px;
+}

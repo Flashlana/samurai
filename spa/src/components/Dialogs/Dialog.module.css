@@ -5,9 +5,6 @@
     border-radius: 8px;
     margin-right: 7px;
     margin-top: 7px;
-}
-
-.dialogsItems {
     padding: 10px;
 }
 
@@ -21,11 +18,11 @@
 }
 
 .dialog {
-    background-color: #D2D7D3;
-    border-radius: 8px;
     margin-bottom: 4px;
-    text-align: center;
-
+    margin-left: 14px;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
 }
 
 .dialog a {
@@ -38,10 +35,54 @@
     color: black;
 }*/
 
-.messages {
-    padding: 10px;
+.dialogsItems {
+    margin-right: 10px;
 }
 
-.message {
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   /* display: block;*/
+    /*  text-align: justify;*/
+}
 
+.messageI {
+    align-self: flex-start;
+    background-color: #D2D7D3;
+    border-radius: 8px;
+    padding: 4px
+   /* display: inline-block;
+    justify-content: flex-start;
+    background-color: #D2D7D3;
+    border-radius: 8px;
+    padding: 4px;*/
+    /*text-align: left;
+    background-color: #D2D7D3;
+    border-radius: 8px;
+    padding: 3px;
+    display: block;*/
+}
+
+.messageOther {
+    align-self: flex-end;
+    border: 1px solid #a1a6a2;
+    border-radius: 8px;
+    padding: 4px;
+   /* display: inline-block;
+    justify-content: flex-start;
+    border: 1px solid #a1a6a2;
+    border-radius: 8px;
+    padding: 4px;*/
+    /*text-align: right;
+    border: 1px solid #a1a6a2;
+    border-radius: 8px;
+    padding: 4px;
+    display: block;*/
+    /*right: 0 !important;*/
+    /*text-align: right;
+    border: 1px solid #a1a6a2;
+    border-radius: 8px;
+    padding: 4px;
+    width: auto;*/
 }

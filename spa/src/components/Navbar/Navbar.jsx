@@ -1,9 +1,10 @@
 import React from 'react';
 import cl from './Navbar.module.css'
 import {NavLink} from "react-router-dom";
-import Image from "./Image/Image";
+import SiderBar from "./SiderBar/SiderBar";
 
-const Navbar = () => {
+const Navbar = (props) => {
+
     return <nav className={cl.nav}>
         <div className={cl.item}>
             <NavLink to='/profile' activeClassName={cl.activeLink}>Profile</NavLink>
@@ -22,11 +23,7 @@ const Navbar = () => {
         </div>
         <div className={cl.itemFriends}>
             <NavLink to='/settings' activeClassName={cl.activeLink}>Friends</NavLink>
-            <div>
-                <Image/>
-                <Image/>
-                <Image/>
-            </div>
+            <SiderBar siderBar={props.siderBar}/>
         </div>
     </nav>
 };

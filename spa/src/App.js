@@ -7,12 +7,11 @@ import Dialog from "./components/Dialogs/Dialog";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import {BrowserRouter, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 
 const App = (props) => {
     return (
-        <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar siderBar={props.state.siderBar}/>
@@ -24,8 +23,6 @@ const App = (props) => {
                     <Route path='/settings' component={Settings}/>
                 </div>
             </div>
-        </BrowserRouter>
-
     )
 };
 

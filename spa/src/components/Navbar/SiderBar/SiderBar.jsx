@@ -1,5 +1,4 @@
 import React from "react";
-import cl from './SiderBar.module.css';
 import SiderBarFriendPhoto from './SiderBarFriendPhoto/SiderBarFriendPhoto';
 
 const SiderBar = (props) => {

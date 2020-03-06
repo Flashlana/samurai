@@ -1,9 +1,12 @@
+import {rerenderEntireTree} from "../render";
+
 const state = {
     profile: {
         posts: [
             {id: 1, message: 'Hello? how are you', count: 10},
             {id: 2, message: 'I am fine and you', count: 20},
-        ]
+        ],
+        newPostText: 'ttt'
     },
     message: {
         dialogs: [
@@ -30,6 +33,21 @@ const state = {
             photo: 'https://naydisebya.ru/wp-content/uploads/portret1-9.jpg'
         }
     ]
+};
+
+export const addPost = (postMessage) => {
+    let newPost = {
+        id: 4,
+        message: postMessage,
+        count: 1
+    };
+    state.profile.posts.push(newPost);
+    rerenderEntireTree(state);
+};
+
+export const updateNewPostText = (newText) => {
+    state.profile.newPostText = newText;
+    rerenderEntireTree(state);
 };
 
 export default state

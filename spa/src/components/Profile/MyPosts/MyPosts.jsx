@@ -6,9 +6,7 @@ const MyPosts = (props) => {
     let postsElement = props.posts.map(post => <Post message={post.message} id={post.id} count={post.count}/>);
     let newPost = React.createRef();
     const addPost = () => {
-        let text = newPost.current.value;
-        props.addPost(text);
-        newPost.current.value = '';
+        props.addPost();
     };
     const onPostChange = () => {
         const text = newPost.current.value;
@@ -18,7 +16,7 @@ const MyPosts = (props) => {
         <div className={cl.myPostBlock}>
             <h3 className={cl.h3}>My posts</h3>
                 <div >
-                    <textarea  ref= {newPost} className={cl.newPost} onChange={onPostChange} value={pr.newPostText}/>
+                    <textarea  ref= {newPost} className={cl.newPost} onChange={onPostChange} value={props.newPostText}/>
                 </div>
                 <div>
                     <button onClick={addPost} className={cl.button}>Add post</button>
